@@ -8,22 +8,24 @@ title: Webhooks
 
 ## Understanding & Using Webhooks
 
-Webhooks are a way to tell Akkroo to call a script on your own web server when a particular event takes place.
+Webhooks are a way to tell Akkroo to call a script on your own web server when a
+particular event takes place.
 
 An example of how this might be useful is as follows,
 
 - **Event:** new person registers at an event via Akkroo
-- **Action:** Akkroo sends a message to your website asking for it to create a user account for the new person
+- **Action:** Akkroo sends a message to your website asking for it to create a
+user account for the new person
 
 
 Other uses could include:
 
-- Updating a live statistics display in your office
-- Sending a SMS message
+- Updating a live statistics display in your office Sending a SMS message
 - Printing a conference label or badge
 
 
-Each of these tasks would require additional coding on your part, but Webhooks provide a great and simple way to start extending Akkroo today.
+Each of these tasks would require additional coding on your part, but Webhooks
+provide a great and simple way to start extending Akkroo today.
 
 
 
@@ -46,7 +48,9 @@ Each of these tasks would require additional coding on your part, but Webhooks p
     </tbody>
 </table>
 
-We currently only provide a PHP library, however the principles are the same across all languages, and if you are interested in working up a version in your own language, please let us know.
+We currently only provide a PHP library, however the principles are the same
+across all languages, and if you are interested in working up a version in your
+own language, please let us know.
 
 
 
@@ -61,7 +65,7 @@ We currently only provide a PHP library, however the principles are the same acr
     require_once 'akkroo-api.class.php';
 
     // Define Constants (use your API Username and Password here)
-    define('AKKROO_API_USER', '7v3247b32h3vgG6HH');
+    define('AKKROO_API_USER',     '7v3247b32h3vgG6HH');
     define('AKKROO_API_PASSWORD', '67NJKSTJ^SAHKJBDW');
 
     // Initialise the API class
@@ -92,7 +96,7 @@ We currently only provide a PHP library, however the principles are the same acr
             },
             {
                 "name":  "Jenny Rex",
-                "email": jenny@akkroo.com"
+                "email": "jenny@akkroo.com"
             }
         ]
     }
