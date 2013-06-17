@@ -1,0 +1,41 @@
+body {
+	background: #fff;
+	line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+	color: #292929;
+}
+
+#container {
+	width: 90%;
+	margin: 2em auto;
+}
+
+nav {
+	float: left;
+	width: 25%;
+}
+
+#content {
+	float: right;
+	width: 75%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "proxima-nova", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+	letter-spacing: 1pt;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2886b6;
+}
+
+pre code {
+	background: #292929;
+	color: #fff;
+	display: block;
+	padding: 2em;
+}
