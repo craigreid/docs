@@ -1,8 +1,14 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
 	background: #fff;
 	line-height: 1.5;
 	font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
 	color: #292929;
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 #container {
@@ -12,7 +18,7 @@ body {
 
 nav {
 	float: left;
-	width: 25%;
+	width: 20%;
 }
 
 #content {
@@ -33,9 +39,49 @@ h6 {
 	color: #2886b6;
 }
 
+a {
+	color: #2886b6;
+}
+
 pre code {
 	background: #292929;
 	color: #fff;
 	display: block;
 	padding: 2em;
+}
+
+
+nav ul {
+	padding: 0;
+}
+nav li {
+	margin-bottom: -1px;
+	font-size: 1.4rem;
+	font-size: 1.4rem;
+	list-style: none;
+	margin-left: 0;
+}
+nav a {
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 1em 0.5em 2em;
+	background-color: #fafafa;
+	border: 1px solid #cadae2;
+}
+nav li.current a {
+	background-color: #2886b6;
+	color: #ffffff;
+}
+nav li ul {
+	margin-top: -1px;
+}
+nav li ul a {
+	background-color: #ffffff;
+	color: #292929;
+	padding-left: 2.5em !important;
+}
+nav li ul a:hover,
+nav li ul a:focus {
+	background-color: #235a76;
+	color: #ffffff;
 }
