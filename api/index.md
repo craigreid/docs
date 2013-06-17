@@ -17,11 +17,11 @@ access by sending an e-mail to [support@akkroo.com](mailto:support@akkroo.com).
 
 ## Quick SDK Downloads
 
-- PHP
-- Python
-- Ruby
-- Java
-- ASP.NET (C#)
+- [PHP](#)
+- [Python](#)
+- [Ruby](#)
+- [Java](#)
+- [ASP.NET (C#)](#)
 
 ## Getting Started: Examples
 
@@ -119,11 +119,11 @@ Extracting collected data.
 Download a SDK for a plug-and-play wrapper. We don't officially support these
 SDKs, but they will help you get started.
 
-- PHP
-- Python
-- Ruby
-- Java
-- ASP.NET (C#)
+- [PHP](#)
+- [Python](#)
+- [Ruby](#)
+- [Java](#)
+- [ASP.NET (C#)](#)
 
 
 
@@ -515,9 +515,15 @@ by specifying the event ID in the url:
         }
     ]
 
-A GET request was performed on the registrations endpoint which returned an array of all the registrations.  The important attribute here is "values" which contains the responses to the questions asked in the App.  The keys of the object are the field IDs.  The value is an object containing a "value" attribute, which is the value for the field.  Some values may be an array, if they are from a set of checkboxes for example, see the "select" value.
+A GET request was performed on the registrations endpoint which returned an
+array of all the registrations.  The important attribute here is "values" which
+contains the responses to the questions asked in the App.  The keys of the
+object are the field IDs.  The value is an object containing a `value`
+attribute, which is the value for the field.  Some values may be an array, if
+they are from a set of checkboxes for example, see the `select` value.
 
-The registrations collection endpoint can also accept a POST containing data with the same JSON format:
+The registrations collection endpoint can also accept a POST containing data
+with the same JSON format:
 
     POST /api/events/118/registrations HTTP/1.1
     Accept: application/vnd.akkroo-v1.1+json
@@ -614,4 +620,6 @@ The registrations collection endpoint can also accept a POST containing data wit
     }
 
 
-There are also error responses which I have not documented here, but hopefully this will give you an idea of how you can integrate with the API. If you have any questions on this let me know.
+There are also error responses which I have not documented here, but hopefully
+this will give you an idea of how you can integrate with the API. If you have
+any questions on this let me know.
