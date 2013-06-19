@@ -14,130 +14,6 @@ In the meanwhile, you may be able to implement based on our
 access by sending an e-mail to [support@akkroo.com](mailto:support@akkroo.com).
 
 
-
-## Quick SDK Downloads
-
-- [PHP](#)
-- [Python](#)
-- [Ruby](#)
-- [Java](#)
-- [ASP.NET (C#)](#)
-
-## Getting Started: Examples
-
-### PHP (Version 5.3+)
-
-    <?php
-
-    // Call the Akkroo API class file
-    require_once 'akkroo-api.class.php';
-
-    // Define Constants (use your API Username and Password here)
-    define('AKKROO_API_USER',     '7v3247b32h3vgG6HH');
-    define('AKKROO_API_PASSWORD', '67NJKSTJ^SAHKJBDW');
-
-    // Initialise the API class
-    $akkroo = new \Akkroo\AkkrooAPI(AKKROO_API_USER, AKKROO_API_PASSWORD);
-
-    // Prepare for the first call, set the arguments in an array
-    $arguments = array(
-        'action'   => 'get_users',
-        'event_id' => '00027333454'
-    );
-
-    // Make the call, assign to variable called $results
-    $results = $akkroo->call($arguments);
-
-    ?>
-
-
-#### Response:
-
-    {
-        users:
-        [
-            {
-                "name":  "Jonathan Carson",
-                "email": "john@akkroo.com"
-            },
-            {
-                "name":  "Jenny Rex",
-                "email": "jenny@akkroo.com"
-            }
-        ]
-    }
-
-
-### Methods
-
-- getGuests
-- addGuests
-- deleteGuests
-
-
-### Pre-event
-
-Loading in lists of guests before events.
-
-<table>
-    <thead>
-        <tr>
-            <th scope="col">Variable</th>
-            <th scope="col">Required</th>
-            <th scope="col">Type</th>
-            <th scope="col">Default</th>
-            <th scope="col">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>event_id</td>
-            <td>Yes</td>
-            <td>Integer</td>
-            <td>&nbsp;</td>
-            <td>The unique ID of the event e.g. 00023324</td>
-        </tr>
-        <tr>
-            <td>limit</td>
-            <td>No</td>
-            <td>Integer</td>
-            <td>1000</td>
-            <td>Limits the number of records returned e.g. 140</td>
-        </tr>
-    </tbody>
-</table>
-
-
-### Post-event
-
-Extracting collected data.
-
-
-
-## Downloads & SDKs
-
-Download a SDK for a plug-and-play wrapper. We don't officially support these
-SDKs, but they will help you get started.
-
-- [PHP](#)
-- [Python](#)
-- [Ruby](#)
-- [Java](#)
-- [ASP.NET (C#)](#)
-
-
-
-## TODO from Nick's email:
-
-
-Below is some information on integrating with Akkroo via our API.  The API will
-be available to use from early July, with full documentation following shortly
-after.  Hopefully the information below will allow you to scope out the work
-involved in the meantime.  If you have any questions on this please let me know.
-I am away for three weeks from Friday, so I have CC'd in Jason who will be able
-to answer any questions in my absence.
-
-
 ### Authentication
 
 The API endpoints require an access token in the Authorization header of every
@@ -149,6 +25,7 @@ success.
 
 
     POST https://dev.akkroo.com/api/auth
+
 
     POST /api/auth HTTP/1.1
     Authorization: Basic <client credentials>
