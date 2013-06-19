@@ -81,7 +81,8 @@ nav li ul a {
 	padding-left: 2.5em !important;
 }
 nav li ul a:hover,
-nav li ul a:focus {
+nav li ul a:focus,
+nav li.active a  {
 	background-color: #235a76;
 	color: #ffffff;
 }

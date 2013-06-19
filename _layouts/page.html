@@ -8,20 +8,20 @@ layout: default
 			<ul>
 				<li><a href="/docs/api#overview">Overview</a></li>
 				<!-- <li><a href="/docs/api#libraries">Libraries</a></li> -->
-				<li><a href="/docs/api/authentication">Authentication</a></li>
-				<li><a href="/docs/api/events">Events</a>
+				<li {% if page.url == '/api/authentication/index.html'  %} class="active" {% endif %}><a href="/docs/api/authentication">Authentication</a></li>
+				<li {% if page.url == '/api/events/index.html'  %} class="active" {% endif %}><a href="/docs/api/events">Events</a>
 					<ul>
 						<li><a href="/docs/api/events#list_events">List Events</a></li>
 						<li><a href="/docs/api/events#single_event">Single Event</a></li>
 					</ul>
 				</li>
-				<li><a href="/docs/api/registrations">Registrations</a>
+				<li {% if page.url == '/api/registrations/index.html'  %} class="active" {% endif %}><a  href="/docs/api/registrations">Registrations </a>
 					<ul>
 						<li><a href="/docs/api/registrations#list_event_registrations">List Event Registrations</a></li>
 						<li><a href="/docs/api/registrations#create_a_registration">Create Registration</a></li>
 					</ul>
 				</li>
-				<li><a href="/docs/api/registrations">Checkins</a>
+				<li><a   href="/docs/api/registrations">Checkins</a>
 					<ul>
 						<li><a href="/docs/api/registrations#list_event_registrations">List Event Registrations</a></li>
 						<li><a href="/docs/api/registrations#create_a_registration">Create Registration</a></li>
