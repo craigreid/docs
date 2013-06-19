@@ -16,7 +16,7 @@ Headers required for api endpoint
 
 <pre><code>Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
-Authorization: Bearer &lt;Authorisation Token&gt;
+Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span>
 </code></pre>
 
 <h3>Response</h3>
@@ -251,7 +251,7 @@ Headers required for api endpoint
 <pre>
 <code>Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
-Authorization: Bearer &lt;Authorisation Token&gt;
+Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span>
 </code>
 </pre>
 

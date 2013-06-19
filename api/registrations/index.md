@@ -16,7 +16,7 @@ Headers required for api endpoint
 
 <pre><code>Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
-Authorization: Bearer &lt;Authorisation Token&gt;</code></pre>
+Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span></code></pre>
 
 ### Response
 
@@ -119,13 +119,13 @@ Last-Modified: Wed, 27 Feb 2013 14:46:07 +0000
 
 Creates a new registration item in the akkroo system
 
-<pre><code>POST https://dev.akkroo.com/api/events/<span class="highlight">:event_id</span>/registrations</code></pre>
+<pre><code class="endpoint">POST https://dev.akkroo.com/api/events/<span class="highlight">:event_id</span>/registrations</code></pre>
 
 Headers Required for this endpoint
 
 <pre><code>Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
-Authorization: Bearer &lt;Authorisation Token&gt;</code></pre>
+Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span></code></pre>
 
 The registrations collection endpoint can also accept a POST containing data
 with the same JSON format:
