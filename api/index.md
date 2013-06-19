@@ -145,7 +145,10 @@ request.  This token is obtained with a 'client credentials' grant
 [http://tools.ietf.org/html/rfc6749#section-4.4](http://tools.ietf.org/html/rfc6749#section-4.4).
 This is a simple process - we will provide you with credentials to use, then you
 perform a POST to the auth endpoint which will return the access token on
-success.  Here's an example:
+success.
+
+
+    POST https://dev.akkroo.com/api/auth
 
     POST /api/auth HTTP/1.1
     Authorization: Basic <client credentials>
@@ -158,6 +161,11 @@ success.  Here's an example:
         "scope":      "PublicAPI"
     }
 
+Here a JSON formatted body was POSTed to `/api/auth` with the client
+credentials. The server returned an access token which can be used to perform
+further API requests.
+
+### Response
 
     HTTP/1.1 200 OK
     Vary: Accept-Encoding,Authorization,If-Modified-Since,If-Unmodified-Since
@@ -180,9 +188,7 @@ success.  Here's an example:
     }
 
 
-Here a JSON formatted body was POSTed to `/api/auth` with the client
-credentials. The server returned an access token which can be used to perform
-further API requests.
+
 
 
 ### API endpoints
