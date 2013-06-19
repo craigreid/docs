@@ -43,12 +43,18 @@ a {
 	color: #2886b6;
 }
 
+pre { margin:0; padding:0; }
 pre code {
 	background: #292929;
 	color: #fff;
 	display: block;
 	padding: 2em;
 }
+
+
+pre code.endpoint { background:#2886b6;}
+
+.highlight { padding:1em; color:#FFC;}
 
 
 nav ul {
