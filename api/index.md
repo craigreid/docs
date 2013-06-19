@@ -39,8 +39,7 @@ success.
     }
 
 Here a JSON formatted body was POSTed to `/api/auth` with the client
-credentials. The server returned an access token which can be used to perform
-further API requests.
+credentials.
 
 ### Response
 
@@ -64,19 +63,23 @@ further API requests.
         "scope":        "PublicAPI"
     }
 
+The server returned an access token which can be used to perform further API requests.
 
 
 
+### List of Events
 
-### API endpoints
+Returns a list of events in the Akkroo system for the current user.
 
-Now we have an access token we can GET a list of events:
+    GET https://dev.akkroo.com/api/events
 
-    GET /api/events HTTP/1.1
+Headers required for api endpoint
+
     Accept: application/vnd.akkroo-v1.1+json
     Content-Type: application/vnd.akkroo-v1.1+json
     Authorization: Bearer NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA
 
+#Response
 
     HTTP/1.1 200 OK
     Last-Modified: Tue, 19 Mar 2013 11:44:57 +0000
