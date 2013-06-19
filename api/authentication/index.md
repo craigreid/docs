@@ -18,13 +18,13 @@ success.
 
 <pre>
     <code class="payload">POST /api/auth HTTP/1.1
-Authorization: Basic &lt;client credentials&gt;
+Authorization: Basic <span class="highlight">&lt;client credentials&gt;</span>
 Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
 
 {
     "grant_type": "client_credentials",
-    "username":   "&lt;username&gt;",
+    "username":   <span class="highlight">&lt;username&gt;"</span>,
     "scope":      "PublicAPI"
 }</code>
 </pre>
