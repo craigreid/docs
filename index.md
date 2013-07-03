@@ -10,7 +10,7 @@ title: Documentation
 
 Our REST API allows our customers to import, export and manage their data.
 
-[API Documentation](/docs/api)
+[API Documentation](/api)
 
 
 ## Webhooks
