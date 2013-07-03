@@ -93,3 +93,15 @@ nav li.active a  {
 	color: #ffffff;
 }
 nav ul li  ul li ul li a { padding-left:5em!important; }
+
+.endpoint-field-parameters {max-width: 100%; border-spacing: 0; width: 100%; margin-bottom: 24px; border-collapse: separate; border-radius: 1px; margin-top:24px; }
+.endpoint-field-parameters tr { background:#FBFBFB;}
+.endpoint-field-parameters td { padding: 18px 24px 6px 24px; border-right: 1px solid #e8e8e8; 
+line-height: 24px;
+text-align: left;
+vertical-align: top;
+border-top: 1px solid #e8e8e8;
+color: #575757;}
+.endpoint-field-parameters tr td:first-child { width:200px; }
+.endpoint-field-parameters tr:nth-child(2n) { background:#FFF;}
+.endpoint-field-parameters tr td .code-example { color:#2886b6; }

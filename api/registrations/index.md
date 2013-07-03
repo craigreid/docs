@@ -200,6 +200,33 @@ with the same JSON format:
         "isCheckIn": false
     }</code></pre>
 
+### Fields
+<table class="endpoint-field-parameters">
+    <tr><td class="field-id">textfield</td><td class='field-value'>something here</td></tr>
+    <tr><td class="field-id">email</td><td class='field-value'>something here</td></tr>
+    <tr><td class="field-id">date</td><td class='field-value'>something here</td></tr>
+    <tr><td class="field-id">select</td><td class='field-value'>something here</td></tr>
+    <tr><td class="field-id">emailMe</td><td class='field-value'>something here</td></tr>
+    <tr>
+        <td class="field-id">checkboxGroup</td>
+        <td class='field-value'>
+
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">isCheckIn</td><td class='field-value'> 
+            <div class="code-example">"isCheckIn": false</div>
+            <div class="code-description">Boolean field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">timeArrived</td><td class='field-value'>
+            <div class="code-example"> "timeArrived": 1361546439237</div>
+            <div class="code-description">This should be a timestamp field</div>
+        </td>
+    </tr>
+</table>
+
 ### Response
 
 <pre><code>201 Created
