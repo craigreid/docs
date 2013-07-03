@@ -11,10 +11,6 @@ body {
 	font-size: 1.6rem;
 }
 
-#container {
-	width: 90%;
-	margin: 2em auto;
-}
 
 nav {
 	float: left;
@@ -57,44 +53,46 @@ pre code.endpoint { background:#2886b6;}
 .highlight { padding:1em 0em; color:#FFC;}
 
 
-nav ul {
+.side-nav { width:20%; margin:3em 0; }
+.side-nav ul {
+
 	padding: 0;
 }
-nav li {
+.side-nav li {
 	margin-bottom: -1px;
 	font-size: 1.4rem;
 	font-size: 1.4rem;
 	list-style: none;
 	margin-left: 0;
 }
-nav a {
+.side-nav a {
 	text-decoration: none;
 	display: block;
-	padding: 0.5em 1em 0.5em 2em;
+	padding: 0.5em 1em 0.5em 1em;
 	background-color: #fafafa;
 	border: 1px solid #cadae2;
 }
-nav li.current a {
+.side-nav li.current a {
 	background-color: #2886b6;
 	color: #ffffff;
 }
-nav li ul {
+.side-nav li ul {
 	margin-top: -1px;
 }
-nav li ul a {
+.side-nav li ul a {
 	background-color: #ffffff;
 	color: #292929;
-	padding-left: 2.5em !important;
+	padding-left: 1em !important;
 }
-nav li ul a:hover,
-nav li ul a:focus,
-nav li.active > a  {
+.side-nav li ul a:hover,
+.side-nav li ul a:focus,
+.side-nav li.active > a  {
 	background-color: #235a76;
 	color: #ffffff;
 }
 
-nav ul li ul li ul li a { padding-left:5em!important; }
-nav ul li ul li ul li ul li a { padding-left:8em!important;}
+.side-nav ul li ul li ul li a { padding-left:3em!important; }
+.side-nav ul li ul li ul li ul li a { padding-left:5em!important;}
 .endpoint-field-parameters {max-width: 100%; border-spacing: 0; width: 100%; margin-bottom: 24px; border-collapse: separate; border-radius: 1px; margin-top:24px; }
 .endpoint-field-parameters tr { background:#FBFBFB;}
 .endpoint-field-parameters td { padding: 18px 24px 6px 24px; border-right: 1px solid #e8e8e8; 
@@ -106,3 +104,4 @@ color: #575757;}
 .endpoint-field-parameters tr td:first-child { width:200px; }
 .endpoint-field-parameters tr:nth-child(2n) { background:#FFF;}
 .endpoint-field-parameters tr td .code-example { color:#2886b6; }
+.layout-dexter .content { margin-top:1em; }
