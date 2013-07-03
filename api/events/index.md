@@ -238,6 +238,34 @@ aren't really appropriate for you. I suppose the only important ones for you
 really are `name` and `id`. The `questions` array forms the majority of the
 response, defining the questions that are asked in the App.
 
+### Fields
+<table class="endpoint-field-parameters">
+    <tr>
+        <td class="field-id">access_token</td><td class='field-value'>
+            <div class="code-example">"access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA"</div>
+            <div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">expires_in</td><td class='field-value'>
+            <div class="code-example">"expires_in": "123123"</div>
+            <div class="code-description">time field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">token_type</td><td class='field-value'>
+            <div class="code-example">"token_type": "bearer"</div>
+            <div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">scope</td><td class='field-value'>
+            <div class="code-example">"scope": "PublicAPI"</div>
+            <div class="code-description">String field</div>
+        </td>
+    </tr>
+</table>
+
 ### Single Event
 
 Returns the event details for the individual event id thats passed to it
@@ -465,4 +493,32 @@ Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span>
 "registerToolbarTitle":"Register",
 "selectOneButton":"Checkin"
 }</code></pre>
+
+### Fields
+<table class="endpoint-field-parameters">
+    <tr>
+        <td class="field-id">access_token</td><td class='field-value'>
+            <div class="code-example">"access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA"</div>
+            <div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">expires_in</td><td class='field-value'>
+            <div class="code-example">"expires_in": "123123"</div>
+            <div class="code-description">time field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">token_type</td><td class='field-value'>
+            <div class="code-example">"token_type": "bearer"</div>
+            <div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="field-id">scope</td><td class='field-value'>
+            <div class="code-example">"scope": "PublicAPI"</div>
+            <div class="code-description">String field</div>
+        </td>
+    </tr>
+</table>
 

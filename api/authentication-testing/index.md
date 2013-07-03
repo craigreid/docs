@@ -55,3 +55,31 @@ Expires: Fri, 14 Jun 2013 09:18:19 GMT
 }</code></pre>
 
 The server returned an access token which can be used to perform further API requests.
+
+### Fields
+<table class="endpoint-field-parameters">
+    <tr>
+    	<td class="field-id">access_token</td><td class='field-value'>
+    		<div class="code-example">"access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">expires_in</td><td class='field-value'>
+    		<div class="code-example">"expires_in": "123123"</div>
+        	<div class="code-description">time field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">token_type</td><td class='field-value'>
+    		<div class="code-example">"token_type": "bearer"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">scope</td><td class='field-value'>
+    		<div class="code-example">"scope": "PublicAPI"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+</table>

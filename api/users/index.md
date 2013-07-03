@@ -74,6 +74,34 @@ Expires: Fri, 14 Jun 2013 09:18:19 GMT
 
 As you can see a user has now been created via this api call
 
+### Fields
+<table class="endpoint-field-parameters">
+    <tr>
+    	<td class="field-id">access_token</td><td class='field-value'>
+    		<div class="code-example">"access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">expires_in</td><td class='field-value'>
+    		<div class="code-example">"expires_in": "123123"</div>
+        	<div class="code-description">time field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">token_type</td><td class='field-value'>
+    		<div class="code-example">"token_type": "bearer"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">scope</td><td class='field-value'>
+    		<div class="code-example">"scope": "PublicAPI"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+</table>
+
 ## Update User
 #TODO this needs looking at im not sure if this end point is correct and what needs to be posted to it etc, the response needs looking at as well to make sure its all ok
 <pre>
@@ -107,3 +135,30 @@ Expires: Fri, 14 Jun 2013 09:18:19 GMT
 
 As you can see the user has now been succesfully updated
 
+### Fields
+<table class="endpoint-field-parameters">
+    <tr>
+    	<td class="field-id">access_token</td><td class='field-value'>
+    		<div class="code-example">"access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">expires_in</td><td class='field-value'>
+    		<div class="code-example">"expires_in": "123123"</div>
+        	<div class="code-description">time field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">token_type</td><td class='field-value'>
+    		<div class="code-example">"token_type": "bearer"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+    <tr>
+    	<td class="field-id">scope</td><td class='field-value'>
+    		<div class="code-example">"scope": "PublicAPI"</div>
+        	<div class="code-description">String field</div>
+        </td>
+    </tr>
+</table>
