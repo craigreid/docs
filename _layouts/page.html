@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<nav>
+<nav class="side-nav">
 	<ul>
 		<li><a href="/docs/api">REST API</a>
 			<ul>
@@ -25,19 +25,8 @@ layout: default
 						</li>
 					</ul>
 				</li>
-				<li {% if page.url == '/api/registrations/index.html'  %} class="active" {% endif %}><a  href="/docs/api/registrations">Registrations </a>
-					<ul>
-						<li><a href="/docs/api/registrations#list_event_registrations">List Event Registrations</a></li>
-						<li><a href="/docs/api/registrations#create_a_registration">Create Registration</a></li>
-					</ul>
-				</li>
-				<li><a   href="/docs/api/registrations">Checkins</a>
-					<ul>
-						<li><a href="/docs/api/registrations#list_event_registrations">List Event Registrations</a></li>
-						<li><a href="/docs/api/registrations#create_a_registration">Create Registration</a></li>
-					</ul>
-				</li>
-				<li><a href="/docs/api/users">Users</a>
+				<li>
+					<a href="/docs/api/users">Users</a>
 					<ul>
 						<li><a href="/docs/api/users#single_user">Single User</a></li>
 						<li><a href="/docs/api/users#create_user">Create User</a></li>

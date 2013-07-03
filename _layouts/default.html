@@ -1,18 +1,307 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6" lang="en-GB"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7" lang="en-GB"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8" lang="en-GB"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en-GB"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
 
-		<title>{{ page.title }}</title>
-		<meta name="description" content="Documentation for the Akkroo API" />
-		<meta name="viewport" content="initial-scale=1,width=device-width" />
+	<!--
+	..........................................................
 
-		<link rel="stylesheet" href="/docs/css/normalize.css" />
-		<link rel="stylesheet" href="/docs/css/style.css" />
-	</head>
-	<body>
-		<div id="container">
-			{{ content }}
+	(c) Akkroo Limited MMXIII
+	[d] The Higgs Design Co. 2012
+	[w] http://higgsdesign.com
+	[t] @higgsdesign
+
+	..........................................................
+	-->
+
+	<!-- Hello there -->
+
+	<title>{{ page.title }}</title>
+	
+	<!-- Meta -->
+	<meta name="description" content="">
+	
+	<!-- SEO -->
+	<meta name="robots" content="">
+	
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="shortcut icon" href="/favicon.png">
+
+		<!-- Microsoft -->
+		<meta name="msapplication-TileImage" content="/windows-tile-144x144.png">
+		<meta name="msapplication-TileColor" content="#2886b6">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- Apple -->
+		<meta name="apple-mobile-web-app-title" content="Akkroo">
+
+		<!-- Mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://assets.akkroo.com/assets/css/bye-bye-clipboard-bye-bye.css">
+	<link rel="stylesheet" href="/docs/css/style.css">
+	<!-- Shiv & CSS Mods: Must stay after CSS, until IE8 is deprecated -->
+	<script src="https://assets.akkroo.com/assets/js/libs/modernizr.min.js"></script>
+
+	<!-- Fonts -->
+	<script src="//use.typekit.net/iru4vcx.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	
+	<!--[if lte IE 7]>
+	<script src="https://assets.akkroo.com/fonts/ocp-mobile-symbols/lte-ie7.js"></script>
+	<![endif]-->
+
+	<!-- Tracking -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_setAccount', 'UA-37000306-1']);
+	  _gaq.push(['_setDomainName', 'akkroo.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+
+	<nav id="assist">
+		<ul>
+			<li><a href="#login-form" class="login modal">Sign in</a></li>
+		</ul>
+	</nav>
+	
+	
+	<aside id="international">
+		<ul>
+			<li><img src="https://assets.akkroo.com/assets/img/flags/uk.png" alt="United Kingdom Flag"> 0203 056 7702</li>
+			<li><img src="https://assets.akkroo.com/assets/img/flags/eu.png" alt="Europe Flag"> +44 203 056 7702</li>
+			<li><img src="https://assets.akkroo.com/assets/img/flags/us.png" alt="United States of America Flag"> 1-855-627-6685</li>
+		</ul>
+	</aside>
+
+	<div id="container">
+
+		<header id="header">
+
+			<div class="content">
+
+				<a href="/">
+					<img src="https://assets.akkroo.com/assets/img/akkroo-logo.png" alt="Akkroo" />
+					<h1 class="page-title">
+						<span>Akkroo - </span><em>Human Contact, Digital Action</em>
+				</h1>
+				</a>
+
+				<nav id="nav">
+
+					<h5>Menu</h5>
+
+					<ul>
+						<li class="home"><a href="https://www.akkroo.com/">Home</a></li>
+						<li ><a href="https://www.akkroo.com/audience"><span>In </span>Action</a></li>
+						<li><a href="https://www.akkroo.com/features/data-capture">Features</a></li>
+						<li ><a href="https://www.akkroo.com/pricing">Pricing</a></li>
+						<li ><a href="https://www.akkroo.com/faq">FAQ</a></li>
+						<li class="signup"><a href="https://www.akkroo.com/signup?plan=Basic"  data-track="click" data-track-category="New Account" data-track-action="Clicked Signup" data-track-label="Main Nav Bar">Sign Up</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+		<div class="content">
+			<section class="layout-dexter">
+				<div class="content">
+					{{ content }}
+				</div>
+			</section>
 		</div>
-	</body>
+		<footer id="footer">
+			
+			<div class="primary">
+				
+				<div class="content">
+		
+					<div class="group">
+		
+						<h4>Akkroo app</h4>
+			
+						<ul>
+							<li><a href="https://www.akkroo.com/features/data-capture">Data Capture</a></li>
+							<li><a href="https://www.akkroo.com/features/event-registration">Event Registration</a></li>
+							<li><a href="https://www.akkroo.com/audience">Case Studies</a></li>
+							<li><a href="https://www.akkroo.com/features/security">Security</a></li>
+							<li><a href="https://www.akkroo.com/pricing">Pricing</a></li>
+							<li><a href="https://www.akkroo.com/signup?plan=Basic&amp;page=<?=htmlentities($_SERVER['REQUEST_URI'])?>" data-track="click" data-track-category="New Account" data-track-action="Clicked Signup" data-track-label="Footer Link">Sign up</a></li>
+						</ul>
+			
+					</div>
+					<div class="group">
+			
+						<h4>About us</h4>
+		
+						<ul>
+							<li><a href="https://www.akkroo.com/about">Our Company</a></li>
+							<li><a href="https://www.akkroo.com/about/customers">Our Customers</a></li>
+							<li><a href="https://www.akkroo.com/about/team">The Team</a></li>
+							<li><a href="https://www.akkroo.com/about/partners">Our Partners</a></li>
+							<li><a href="https://www.akkroo.com/about/jobs">Careers</a></li>
+							<li><a href="http://blog.akkroo.com/" class="new-window">Blog</a></li>
+						</ul>
+			
+					</div>
+					<div class="group">
+			
+						<h4>Support</h4>
+			
+						<ul>
+							<li><a href="https://www.akkroo.com/contact">Contact Us</a></li>
+							<li><a href="https://www.akkroo.com/support">Help Centre</a></li>
+							<li><a href="http://status.akkroo.com" class="new-window">Service Status</a></li>
+							<? if(staged_release(3)): // Connected Services ?><li><a href="/developers">Developer API</a></li><? endif; ?>
+							<li><a href="https://www.akkroo.com/device-hire">Hire iPads</a></li>
+							<li><a href="https://www.akkroo.com/resellers">Resellers</a></li>
+							<li><a href="http://twitter.com/akkrooapp" class="new-window">Twitter</a></li>
+						</ul>
+			
+					</div>
+			
+					<div class="group">
+			
+						<p>Ask our friendly team for a demo: <a href="mailto:hello@akkroo.com?subject=I%20have%20a%20question%20for%20you" data-track="click" data-track-category="Email Link" data-track-action="Clicked">hello@akkroo.com</a> <a href="tel:+4402030567702" class="modal" data-note="Expressed interest in a demo"  data-track="click" data-track-category="Callback Form" data-track-action="Opened" data-track-label="Footer Phone Link">0203 056 7702</a> <a href="#callback-form" class="modal" data-note="Expressed interest in a callback" data-track="click" data-track-category="Callback Form" data-track-action="Opened" data-track-label="Footer Link">Call me back &rarr;</a></p>
+				
+						<form action="https://mail.akkroo.com/interface/list.php" method="post" novalidate>
+							<div class="field">
+								<label for="newsletter-email">Get Email Updates</label>
+								<input name="email" id="newsletter-email" type="email">
+								<input type="hidden" name="accName" value="rmp121">
+								<input type="hidden" name="listName" value="Website Signups">
+								<input type="hidden" name="fullEmailValidationInd" value="Y">
+								<input type="hidden" name="doubleOptin" value="false">
+								<input type="hidden" name="successUrl" value="">
+								<input type="hidden" name="errorUrl" value="">
+								<button type="submit"><span>Go</span></button>
+							</div>
+						</form>
+		
+					</div>
+					
+				</div><!-- .content -->
+					
+			</div> <!-- .primary -->
+	
+			<div class="secondary">
+				
+				<div class="content">
+		
+					<div class="colophon">
+		
+						<p class="copyright"><abbr title="Copyright Akkroo Limited">&copy; Akkroo Ltd</abbr> <time datetime="2013">MMXIII</time></p>
+			
+						<ul class="end-links">
+							<li><a href="https://www.akkroo.com/privacy">Privacy</a></li>
+							<li><a href="https://www.akkroo.com/terms">Terms</a></li>
+							<li><a href="https://www.akkroo.com/contact">Contact</a></li>
+						</ul>
+
+						<p class="end-note">Data Capture &amp; Event Check-in, Simplified.</p>
+			
+					</div>
+					
+				</div><!--.content-->
+				
+			</div><!--.secondary-->
+		
+		</footer>
+	</div><!--#container-->
+	
+	<form id="callback-form" method="post" action="/contact" novalidate autocomplete="off">
+		
+		<h3>Let us call you</h3>
+	
+		<div class="field name">
+			<label for="cb_name">Name <abbr title="required">*</abbr></label>
+			<input name="cb_name" id="cb_name" type="text" value="<?=(!empty($contact_form->form_output['cb_name'])?$contact_form->form_output['cb_name']:'')?>" required="required" />
+		</div>
+		
+		<div class="field honeypot">
+			<label for="cb_fullname">Please leave this completely empty</label>
+			<input name="cb_fullname" id="cb_fullname" type="text" value="<?=(!empty($contact_form->form_output['cb_fullname'])?$contact_form->form_output['cb_fullname']:'')?>" autocomplete="off" tabindex="-1" />
+		</div>
+		
+		<div class="field company">
+			<label for="cb_org">Company <abbr title="required">*</abbr></label>
+			<input name="cb_org" id="cb_org" type="text" value="<?=(!empty($contact_form->form_output['cb_org'])?$contact_form->form_output['cb_org']:'')?>" required="required" />
+		</div>
+		
+		<div class="field email">
+			<label for="cb_email">E-mail</label>
+			<input name="cb_email" id="cb_email" type="email" value="<?=(!empty($contact_form->form_output['cb_email'])?$contact_form->form_output['cb_email']:'')?>" />
+		</div>
+		
+		<div class="field phone">
+			<label for="cb_phone">Phone <abbr title="required">*</abbr></label>
+			<input name="cb_phone" id="cb_phone" type="text" value="<?=(!empty($contact_form->form_output['cb_phone'])?$contact_form->form_output['cb_phone']:'')?>" required="required" />
+		</div>
+	
+		<p>Just leave your details and one of our team will be in touch. Or if you prefer, call us on <strong>0203 056 7702</strong>.</p>
+		
+		<div class="buttons">
+			<button type="submit">Call Me Back</button>
+			<input type="hidden" name="cb_note" value="">
+			<input type="hidden" name="action" value="callback-form">
+		</div>
+	
+	</form>
+	
+	<form id="login-form" method="post" action="https://<?=$_SERVER['SERVER_NAME']?>/login" novalidate autocomplete="off">
+		
+		<h3>Sign in to Akkroo</h3>
+		
+		<div class="field">
+			<label for="login-email">E-mail <abbr title="required">*</abbr></label>
+			<input name="email" id="login-email" type="email" value="" required="required" />
+		</div>
+		<div class="field">
+			<label for="login-password">Password <abbr title="required">*</abbr></label>
+			<input name="password" id="login-password" type="password" value="" required="required" />
+		</div>
+		<div class="buttons">
+			<button type="submit" class="indented">Login</button>
+		</div>
+		<div class="actions">
+			<p><a href="https://www.akkroo.com/login/forgot">Forgotten account details?</a></p>
+			<p><a href="/signup?plan=Basic" data-track="click" data-track-category="New Account" data-track-action="Clicked Signup" data-track-label="On Sign In Popup">Sign up to Akkroo</a></p>
+		</div>
+		
+	</form>
+	
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!-- Video.js Player: can be here because video Shiv is included in Modernizer -->
+	<script src="//vjs.zencdn.net/c/video.js"></script>
+
+	<!-- Plugins  -->
+	<script src="https://assets.akkroo.com/assets/js/plugins.js"></script>
+	<script src="https://assets.akkroo.com/assets/js/libs/jquery.hdc-popover.js"></script>
+	<script src="https://assets.akkroo.com/assets/js/libs/jgestures.min.js"></script>
+	
+	<!-- Global & Page Specific Scripts -->
+	<script src="https://assets.akkroo.com/assets/js/script.js?1"></script>
+
+</body>
 </html>
