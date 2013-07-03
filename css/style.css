@@ -88,12 +88,13 @@ nav li ul a {
 }
 nav li ul a:hover,
 nav li ul a:focus,
-nav li.active a  {
+nav li.active > a  {
 	background-color: #235a76;
 	color: #ffffff;
 }
-nav ul li  ul li ul li a { padding-left:5em!important; }
 
+nav ul li ul li ul li a { padding-left:5em!important; }
+nav ul li ul li ul li ul li a { padding-left:8em!important;}
 .endpoint-field-parameters {max-width: 100%; border-spacing: 0; width: 100%; margin-bottom: 24px; border-collapse: separate; border-radius: 1px; margin-top:24px; }
 .endpoint-field-parameters tr { background:#FBFBFB;}
 .endpoint-field-parameters td { padding: 18px 24px 6px 24px; border-right: 1px solid #e8e8e8; 
