@@ -10,7 +10,7 @@ title: Documentation
 
 Our REST API allows our customers to import, export and manage their data.
 
-[API Documentation](/api)
+[API Documentation](api)
 
 
 ## Webhooks
@@ -21,4 +21,4 @@ is added to Akkroo through data capture or event registration.
 Use it to develop a statistical display of realtime information, print labels,
 create accounts on your website or update your CRM.
 
-[Webhook Documentation](/webhooks)
+[Webhook Documentation](webhooks)
