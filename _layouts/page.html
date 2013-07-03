@@ -27,12 +27,29 @@ layout: default
 						<li><a href="/docs/api/registrations#create_a_registration">Create Registration</a></li>
 					</ul>
 				</li>
-				<li><a href="/docs/api/registrations">Users</a>
+				<li><a href="/docs/api/users">Users</a>
 					<ul>
-						<li><a href="/docs/api/registrations#list_event_registrations">List Event Registrations</a></li>
-						<li><a href="/docs/api/registrations#create_a_registration">Create Registration</a></li>
+						<li><a href="/docs/api/users#single_user">Single User</a></li>
+						<li><a href="/docs/api/users#create_user">Create User</a></li>
+						<li><a href="/docs/api/users#update_user">Update User</a></li>	
 					</ul>
 				</li>
+				<li><a href="/docs/api/resources">Resources</a>
+					<ul>
+						<li><a href="/docs/api/resources#single_resource">Single Resource</a></li>
+					</ul>
+				</li>
+				<li><a href="/docs/api/company">Company</a>
+					<ul>
+						<li><a href="/docs/api/company#single_company">Single Company</a></li>
+					</ul>
+				</li>
+				<li><a href="">Authorisation Testing</a>
+					<ul>
+						<li><a href="">Auth Testing</a></li>
+					</ul>
+				</li>
+
 			</ul>
 		</li>
 		<li><a href="/docs/webhooks">Webhooks</a>
@@ -44,6 +61,21 @@ layout: default
 		</li>
 		<li><a href="https://akkroo.com/support" target="_blank">Support</a></li>
 	</ul>
+
+
+<!-- Here's a list of all the endpoints.  You can also get this by looking at the code, in 
+/publish/shared/Akkroo/API/Endpoints
+
+Use PublicAPI as the client to test these.  your client for the form does not have access.
+
+/api/appUsers/[id]
+/api/events/[id]
+/api/events/[id]/registrations
+/api/resources/[resourceName]
+/api/authtest
+/api/company
+/api/selftest -->
+
 </nav>
 
 <div id="content">
