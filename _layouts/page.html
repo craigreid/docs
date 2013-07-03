@@ -34,12 +34,12 @@ layout: default
 						<li><a href="/docs/api/users#update_user">Update User</a></li>	
 					</ul>
 				</li>
-				<li><a href="/docs/api/resources">Resources</a>
+				<li {% if page.url == '/api/resources/index.html'  %} class="active" {% endif %}><a href="/docs/api/resources">Resources</a>
 					<ul>
 						<li><a href="/docs/api/resources#single_resource">Single Resource</a></li>
 					</ul>
 				</li>
-				<li><a href="/docs/api/company">Company</a>
+				<li {% if page.url == '/api/company/index.html'  %} class="active" {% endif %}><a href="/docs/api/company">Company</a>
 					<ul>
 						<li><a href="/docs/api/company#single_company">Single Company</a></li>
 					</ul>
