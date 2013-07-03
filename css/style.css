@@ -25,7 +25,6 @@ nav {
 h1,
 h2,
 h3,
-
 h5,
 h6 {
 	font-family: "proxima-nova", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
@@ -49,13 +48,9 @@ pre code {
 
 
 pre code.endpoint { background:#2886b6;}
-
 .highlight { padding:1em 0em; color:#FFC;}
-
-
 .side-nav { width:20%; margin:3em 0; }
 .side-nav ul {
-
 	padding: 0;
 }
 .side-nav li {
