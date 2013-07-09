@@ -5,10 +5,9 @@ title: Akkroo Help & Support
 
 # Help & Support Centre
 
-
 #### Getting Started with Akkroo
 
-Get answers to common questions, and watch video tutorials.
+Get answers to common questions, and watch our video tutorials.
 
 <p><a href="/customers" class="feature-button next">Guides &amp; Videos</a> <a href="https://akkroo.com/dashboard/support/ticket" class="feature-button">New Support Ticket</a></p>
 
