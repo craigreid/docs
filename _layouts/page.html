@@ -21,9 +21,13 @@ layout: default
 						<li {% if page.url contains '/customers/guides/user-guide.html'  %} class="current" {% endif %}><a href="/customers/guides/user-guide.html">User Guide (PDF)</a></li>
 					</ul>
 				</li>
-				<li {% if page.url contains '/customers/videos' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/videos">Video Tutorials</a></li>
-				<li><a href="https://akkroo.com/dashboard/customers/ticket">New Support Ticket</a></li>
-				<li><a href="http://status.akkroo.com" class="new-window">Service Status</a></li>
+				<li {% if page.url contains '/customers/videos' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/videos">Video Tutorials</a>
+					<ul>
+						<li {% if page.url contains '/customers/videos/form-builder.html' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/videos/form-builder.html">Using Form Builder</a></li>
+						<li {% if page.url contains '/customers/videos/data-export.html' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/videos/data-export.html">Exporting data</a></li>
+						<li {% if page.url contains '/customers/videos/real-time-statistics.html' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/videos/real-time-statistics.html">In-app statistics</a></li>
+					</ul>
+				</li>
 			</ul>
 		</li>
 		<li {% if page.url contains '/developers'  %} class="current" {% endif %}><a href="/developers">Developers</a>
@@ -48,7 +52,9 @@ layout: default
 					</ul>
 				</li>
 			</ul>
-		</li>
+		</li>	
+			<li><a href="https://akkroo.com/dashboard/support/ticket" class="new-window">New Support Ticket</a></li>
+			<li><a href="http://status.akkroo.com" class="new-window">Service Status</a></li>
 	</ul>
 </nav>
 <div class="in-page">
