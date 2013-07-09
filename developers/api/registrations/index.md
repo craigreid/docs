@@ -3,7 +3,14 @@ layout: page
 title: REST API Events Documentation
 ---
 
-# Registrations
+<ol itemprop="breadcrumb">
+<li><a href="/">Support</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/developers/api">API</a></li>
+<li><a href="/developers/api/registrations">Registration Methods</a></li>
+</ol>
+
+# Registrations - API Methods
 
 
 ## List Event Registrations

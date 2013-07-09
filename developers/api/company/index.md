@@ -1,32 +1,33 @@
 ---
 layout: page
-title: REST API Documentation
+title: Company - REST API Documentation
 ---
 
-### Resources
+<ol itemprop="breadcrumb">
+<li><a href="/">Support</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/developers/api">API</a></li>
+<li><a href="/developers/api/company">Company Methods</a></li>
+</ol>
 
+# Companies - API Methods
+
+This end point returns the company information for the currently user
 #TODO Some pre content for this section
 
-### Single Resource
+### Single Company
 <pre>
-    <code class="endpoint">POST https://dev.akkroo.com/api/resources/<span class="highlight">:resource_name</span></code>
+    <code class="endpoint">GET https://dev.akkroo.com/api/company</code>
 </pre>
 
 <pre>
-    <code class="payload">POST /api/resources/<span class="highlight">:resource_name</span> HTTP/1.1
+    <code class="payload">GET /api/company HTTP/1.1
 Authorization: Bearer <span class="highlight">&lt;client credentials&gt;</span>
 Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
-
-{
-    "grant_type": "client_credentials",
-    "username":   <span class="highlight">&lt;username&gt;"</span>,
-    "scope":      "PublicAPI"
-}</code>
+</code>
 </pre>
 
-Here a JSON formatted body was POSTed to the endpoint with the client
-credentials.
 
 ### Response
 
@@ -42,15 +43,20 @@ Transfer-Encoding: Identity
 Keep-Alive: timeout=5, max=100
 Cache-Control: no-cache, max-age=2592000
 Expires: Fri, 14 Jun 2013 09:18:19 GMT
-
 {
-    "access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA",
-    "expires_in":   "1209600",
-    "token_type":   "bearer",
-    "scope":        "PublicAPI"
+	"id": returned company id,
+	"themeDefault":"returned theme default",
+	"themeAvailable":"returned available themes",
+	"lastModified":"Fri, 17 May 2013 16:17:37 +0100",
+	"name":"returned company name",
+	"appPasscode":"returned app pass code",
+	"companyCSS":"returned company css",
+	"urlHash":"returned url hash",
+	"username":"returned username",
+	"accountExpires":null
 }</code></pre>
 
-The server returned an access token which can be used to perform further API requests.
+The API returned the company details for the currently authorised credentials
 
 ### Fields
 <table class="endpoint-field-parameters">

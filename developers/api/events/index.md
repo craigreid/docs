@@ -3,7 +3,33 @@ layout: page
 title: REST API Events Documentation
 ---
 
-# Events
+<ol itemprop="breadcrumb">
+<li><a href="/">Support</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/developers/api">API</a></li>
+<li><a href="/developers/api/events">Event Methods</a></li>
+</ol>
+
+# Events - API Methods
+
+#### Event Methods
+
+<ul>
+	<li><a href="/developers/api/events#create_event">Create Event</a></li>
+	<li><a href="/developers/api/events#list_events">List All Events</a></li>
+	<li><a href="/developers/api/events#list_single_event">List Single Event</a>
+		<ul>
+			<li><a href="/developers/api/events#list_registrations">List Registrations</a></li>
+			<li><a href="/developers/api/events#list_checkins">List Checkins</a></li>
+			<li><a href="/developers/api/events#create_registration">Create Registration</a></li>
+			<li><a href="/developers/api/events#create_checkin">Create Checkin</a></li>
+			<li><a href="/developers/api/events#bulk_registrations">Bulk Registrations</a></li>
+			<li><a href="/developers/api/events#bulk_checkins">Bulk Checkins</a></li>
+		</ul>
+	</li>
+</ul>
+
+
 
 ## Create Event
 
@@ -18,7 +44,8 @@ Headers required for api endpoint
 <pre><code>Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
 Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span>
-</code></pre>
+</code>
+</pre>
 
 <h3>Response</h3>
 
@@ -271,14 +298,17 @@ response, defining the questions that are asked in the App.
 
 Returns a list of events in the Akkroo system for the current user.
 
-<pre><code class="endpoint">GET https://dev.akkroo.com/api/events</code></pre>
+<pre><code class="endpoint">GET https://dev.akkroo.com/api/events</code>
+</pre>
+
 
 Headers required for api endpoint
 
 <pre><code>Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
 Authorization: Bearer <span class="highlight">&lt;Authorisation Token&gt;</span>
-</code></pre>
+</code>
+</pre>
 
 <h3>Response</h3>
 
@@ -490,7 +520,8 @@ Content-Range: resources 0-10/10
             }
         ]
     }
-]</code></pre>
+]</code>
+</pre>
 
 A GET request was performed on the `/api/events` endpoint, which fetches all the
 events in the system.  An array of event objects is returned. Shown here is just

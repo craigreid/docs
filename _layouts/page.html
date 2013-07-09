@@ -2,64 +2,57 @@
 layout: default
 ---
 
-<nav class="side-nav in-page">
+<nav class="in-page">
 	<ul>
-		<li><a href="/api">REST API</a>
+		<li {% if page.url contains '/customers' or page.url == '/index.html'  %} class="current" {% endif %}><a href="/">Help Centre</a>
 			<ul>
-				<li><a href="/api#overview">Overview</a></li>
-				<!-- <li><a href="/api#libraries">Libraries</a></li> -->
-				<li {% if page.url == '/api/authentication/index.html'  %} class="active" {% endif %}><a href="/api/authentication">Authentication</a></li>
-				<li {% if page.url == '/api/events/index.html'  %} class="active" {% endif %}><a href="/api/events">Events</a>
+				<li {% if page.url contains '/customers/guides' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/guides">Guides &amp; Tutorials</a>
 					<ul>
-						<li><a href="/api/events#create_event">Create Event</a></li>
-						<li><a href="/api/events#list_events">List All Events</a></li>
-						<li><a href="/api/events#list_single_event">List Single Event</a>
-							<ul>
-								<li><a href="/api/events#list_registrations">List Registrations</a></li>
-								<li><a href="/api/events#list_checkins">List Checkins</a></li>
-								<li><a href="/api/events#create_registration">Create Registration</a></li>
-								<li><a href="/api/events#create_checkin">Create Checkin</a></li>
-								<li><a href="/api/events#bulk_registrations">Bulk Registrations</a></li>
-								<li><a href="/api/events#bulk_checkins">Bulk Checkins</a></li>
-							</ul>
-						</li>
+					<li {% if page.url contains '/customers/guides/get-started.html'  %} class="current" {% endif %}><a href="/customers/guides/get-started.html">Getting Started</a></li>	
+						<li {% if page.url contains '/customers/guides/installation.html'  %} class="current" {% endif %}><a href="/customers/guides/installation.html">Installing the App</a></li>
+						<li {% if page.url contains '/customers/guides/collecting.html'  %} class="current" {% endif %}><a href="/customers/guides/collecting.html">Collecting Data</a></li>
+						<li {% if page.url contains '/customers/guides/download.html'  %} class="current" {% endif %}><a href="/customers/guides/download.html">Downloading Data</a></li>
+						<li {% if page.url contains '/customers/guides/efficiency.html'  %} class="current" {% endif %}><a href="/customers/guides/efficiency.html">Choosing Fields</a></li>
+						<li {% if page.url contains '/customers/guides/email.html'  %} class="current" {% endif %}><a href="/customers/guides/email.html">Using Email</a></li>
+						<li {% if page.url contains '/customers/guides/styling.html'  %} class="current" {% endif %}><a href="/customers/guides/styling.html">Styling the App</a></li>
+						<li {% if page.url contains '/customers/guides/team-access.html'  %} class="current" {% endif %}><a href="/customers/guides/team-access.html">Working in Teams</a></li>
+						<li {% if page.url contains '/customers/guides/update-ios.html'  %} class="current" {% endif %}><a href="/customers/guides/update-ios.html">Updating iOS</a></li>
+						<li {% if page.url contains '/customers/guides/update.html'  %} class="current" {% endif %}><a href="/customers/guides/update.html">Software Updates</a></li>
+						<li {% if page.url contains '/customers/guides/user-guide.html'  %} class="current" {% endif %}><a href="/customers/guides/user-guide.html">User Guide (PDF)</a></li>
 					</ul>
 				</li>
-				<li>
-					<a href="/api/users">Users</a>
+				<li {% if page.url contains '/customers/videos' or page.url == '/'  %} class="current" {% endif %}><a href="/customers/videos">Video Tutorials</a></li>
+				<li><a href="https://akkroo.com/dashboard/customers/ticket">New Support Ticket</a></li>
+				<li><a href="http://status.akkroo.com" class="new-window">Service Status</a></li>
+			</ul>
+		</li>
+		<li {% if page.url contains '/developers'  %} class="current" {% endif %}><a href="/developers">Developers</a>
+			<ul>
+				<li {% if page.url contains '/developers/api'  %} class="current" {% endif %}><a href="/developers/api">REST API</a>
 					<ul>
-						<li><a href="/api/users#single_user">Single User</a></li>
-						<li><a href="/api/users#create_user">Create User</a></li>
-						<li><a href="/api/users#update_user">Update User</a></li>	
+						<li {% if page.url == '/developers/api/get-started/index.html'  %} class="current" {% endif %}><a href="/developers/api/get-started">Getting Started</a></li>
+						<li {% if page.url == '/developers/api/libraries/index.html'  %} class="current" {% endif %}><a href="/developers/api/libraries">Downloads &amp; SDKs</a></li>
+						<li {% if page.url == '/developers/api/authentication/index.html'  %} class="current" {% endif %}><a href="/developers/api/authentication">Authentication</a></li>
+					
+						<li {% if page.url == '/developers/api/users/index.html'  %} class="current" {% endif %}><a href="/developers/api/users">Users</a></li>
+					
+						<li {% if page.url == '/developers/api/resources/index.html'  %} class="current" {% endif %}><a href="/developers/api/resources">Resources</a></li>
+						<li {% if page.url == '/developers/api/company/index.html'  %} class="current" {% endif %}><a href="/developers/api/company">Company</a></li>
+						<li {% if page.url == '/developers/api/authentication-testing/index.html'  %} class="current" {% endif %}><a href="/developers/api/authentication-testing">Authorisation Testing</a></li>
 					</ul>
 				</li>
-				<li {% if page.url == '/api/resources/index.html'  %} class="active" {% endif %}><a href="/api/resources">Resources</a>
+				<li {% if page.url contains '/developers/webhooks'  %} class="current" {% endif %}><a href="/developers/webhooks">Webhooks</a></li>
+				<li {% if page.url contains '/developers/projects'  %} class="current" {% endif %}><a href="/developers/projects">Projects</a>
 					<ul>
-						<li><a href="/api/resources#single_resource">Single Resource</a></li>
-					</ul>
-				</li>
-				<li {% if page.url == '/api/company/index.html'  %} class="active" {% endif %}><a href="/api/company">Company</a>
-					<ul>
-						<li><a href="/api/company#single_company">Single Company</a></li>
-					</ul>
-				</li>
-				<li {% if page.url == '/api/authentication-testing/index.html'  %} class="active" {% endif %}><a href="/api/authentication-testing">Authorisation Testing</a>
-					<ul>
-						<li><a href="/api/authentication-testing">Auth Testing</a></li>
+						<li {% if page.url contains '/developers/projects/mongo-query.html'  %} class="current" {% endif %}><a href="/developers/projects/mongo-query.html">Mongo Query</a></li>
 					</ul>
 				</li>
 			</ul>
 		</li>
-		<li><a href="/webhooks">Webhooks</a>
-			<ul>
-				<li><a href="/webhooks#intro">Overview</a></li>
-				<li><a href="/webhooks#libraries">Libraries</a></li>
-				<li><a href="/webhooks#examples">Examples</a></li>
-			</ul>
-		</li>
-		<li><a href="https://akkroo.com/support" target="_blank">Support</a></li>
 	</ul>
 </nav>
-<div id="" class="in-page">
+<div class="in-page">
+	<article>
 	{{ content }}
+	</article>
 </div>

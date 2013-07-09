@@ -1,9 +1,22 @@
 ---
 layout: page
-title: Users - REST API Documentation
+title: Users - REST API Documentation – Akkroo
 ---
 
-### Users
+<ol itemprop="breadcrumb">
+<li><a href="/">Support</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/developers/api">API</a></li>
+<li><a href="/developers/api/users">User Methods</a></li>
+</ol>
+
+# Users - API Methods
+
+<ul>
+	<li><a href="/developers/api/users#single_user">Single User</a></li>
+	<li><a href="/developers/api/users#create_user">Create User</a></li>
+	<li><a href="/developers/api/users#update_user">Update User</a></li>	
+</ul>
 
 #TODO Some pre content for this section
 

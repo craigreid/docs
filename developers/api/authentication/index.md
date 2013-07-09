@@ -1,26 +1,43 @@
 ---
 layout: page
-title: Company - REST API Documentation
+title: Authentication - REST API Documentation
 ---
 
-### Company
+<ol itemprop="breadcrumb">
+<li><a href="/">Support</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/developers/api">API</a></li>
+<li><a href="/developers/api/authentication">Authentication Methods</a></li>
+</ol>
 
-This end point returns the company information for the currently user
-#TODO Some pre content for this section
+# Authentication
 
-### Single Company
+The API endpoints require an access token in the Authorization header of every
+request.  This token is obtained with a 'client credentials' grant
+[http://tools.ietf.org/html/rfc6749#section-4.4](http://tools.ietf.org/html/rfc6749#section-4.4).
+This is a simple process - we will provide you with credentials to use, then you
+perform a POST to the auth endpoint which will return the access token on
+success.
+
 <pre>
-    <code class="endpoint">GET https://dev.akkroo.com/api/company</code>
+    <code class="endpoint">POST https://dev.akkroo.com/api/auth</code>
 </pre>
 
 <pre>
-    <code class="payload">GET /api/company HTTP/1.1
-Authorization: Bearer <span class="highlight">&lt;client credentials&gt;</span>
+    <code class="payload">POST /api/auth HTTP/1.1
+Authorization: Basic <span class="highlight">&lt;client credentials&gt;</span>
 Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
-</code>
+
+{
+    "grant_type": "client_credentials",
+    "username":   <span class="highlight">&lt;username&gt;"</span>,
+    "scope":      "PublicAPI"
+}</code>
 </pre>
 
+Here a JSON formatted body was POSTed to the endpoint with the client
+credentials.
 
 ### Response
 
@@ -36,20 +53,17 @@ Transfer-Encoding: Identity
 Keep-Alive: timeout=5, max=100
 Cache-Control: no-cache, max-age=2592000
 Expires: Fri, 14 Jun 2013 09:18:19 GMT
-{
-	"id": returned company id,
-	"themeDefault":"returned theme default",
-	"themeAvailable":"returned available themes",
-	"lastModified":"Fri, 17 May 2013 16:17:37 +0100",
-	"name":"returned company name",
-	"appPasscode":"returned app pass code",
-	"companyCSS":"returned company css",
-	"urlHash":"returned url hash",
-	"username":"returned username",
-	"accountExpires":null
-}</code></pre>
 
-The API returned the company details for the currently authorised credentials
+{
+    "access_token": "NmZhOTQwODU0ZDUxMzBjYzBjNDIwYzk4ZTQwN2NkOGEwZWM3OTZiNjk4YTc3YjY5NTY4YzQ1YWYzOTcxMGM2NA",
+    "expires_in":   "1209600",
+    "token_type":   "bearer",
+    "scope":        "PublicAPI"
+}</code>
+</pre>
+
+
+The server returned an access token which can be used to perform further API requests.
 
 ### Fields
 <table class="endpoint-field-parameters">

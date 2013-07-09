@@ -3,22 +3,25 @@ layout: page
 title: REST API Documentation
 ---
 
-### Authentication
+<ol itemprop="breadcrumb">
+<li><a href="/">Support</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/developers/api">API</a></li>
+<li><a href="/developers/api/resources">Resources Methods</a></li>
+</ol>
 
-The API endpoints require an access token in the Authorization header of every
-request.  This token is obtained with a 'client credentials' grant
-[http://tools.ietf.org/html/rfc6749#section-4.4](http://tools.ietf.org/html/rfc6749#section-4.4).
-This is a simple process - we will provide you with credentials to use, then you
-perform a POST to the auth endpoint which will return the access token on
-success.
+# Resources - API Methods
 
+#TODO Some pre content for this section
+
+### Single Resource
 <pre>
-    <code class="endpoint">POST https://dev.akkroo.com/api/auth</code>
+    <code class="endpoint">POST https://dev.akkroo.com/api/resources/<span class="highlight">:resource_name</span></code>
 </pre>
 
 <pre>
-    <code class="payload">POST /api/auth HTTP/1.1
-Authorization: Basic <span class="highlight">&lt;client credentials&gt;</span>
+    <code class="payload">POST /api/resources/<span class="highlight">:resource_name</span> HTTP/1.1
+Authorization: Bearer <span class="highlight">&lt;client credentials&gt;</span>
 Accept: application/vnd.akkroo-v1.1+json
 Content-Type: application/vnd.akkroo-v1.1+json
 
