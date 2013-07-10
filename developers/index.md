@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Developer Centre – Akkroo API & Webhooks
+title: Developer Centre – Akkroo API, Webhooks and Labs
 ---
 
 <ol itemprop="breadcrumb">
@@ -38,11 +38,11 @@ Welcome to Akkroo Developer Support. All our documentation is publicly available
 
 <div class="col-3-1">
 
-<h2>Projects</h2>
+<h2>Labs</h2>
 
-<p>We have a number of open source projects that you maybe interested in..</p>
+<p>Akkroo Labs is our open source initiative.  Core technologies we develop when building Akkroo that we think others may find useful are packed up and published to GitHub.</p>
 <p>Find out more, download the raw files or learn how to contribute.</p>
 
-<p><a href="/developers/projects" class="feature-button">Project Labs</a></p>
+<p><a href="/developers/labs" class="feature-button">Labs</a></p>
 
 </div>
