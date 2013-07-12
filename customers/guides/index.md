@@ -12,3 +12,7 @@ title: Guides & Tutorials - Customer Support – Akkroo
 # Guides & Tutorials
 
 Choose a guide or tutorial from the list.
+
+## ANother title
+
+a [paragraph](http://news.bbc.co.uk)
